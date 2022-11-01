@@ -7,4 +7,7 @@ The repository contains a simple Java application which outputs the string
 mvn clean install
 
 
-java -jar "jarname"
+to run
+
+scripts/deliver.sh
+
