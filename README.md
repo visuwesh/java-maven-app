@@ -7,4 +7,4 @@ The repository contains a simple Java application which outputs the string
 mvn clean install
 
 
-java -jar <jarname>
+java -jar "jarname"
