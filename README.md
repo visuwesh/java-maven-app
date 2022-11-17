@@ -11,7 +11,7 @@ to build
 mvn clean install
 
 
-to run
+to run the application
 
 scripts/deliver.sh
 
