@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: javamaven
+  labels:
+    app: javamaven
+  namespace: namespace-workflow-1686120775428
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: javamaven
+  template:
+    metadata:
+      labels:
+        app: javamaven
+    spec:
+      containers:
+        - name: javamaven
+          image: acrworkflow1686120775428.azurecr.io/image-workflow-1686120775428:latest
+          ports:
+            - containerPort: 8080

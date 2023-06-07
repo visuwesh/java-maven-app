@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: javamaven
+  namespace: namespace-workflow-1686120775428
+spec:
+  type: LoadBalancer
+  selector:
+    app: javamaven
+  ports:
+    - protocol: TCP
+      port: 8080
+      targetPort: 8080
